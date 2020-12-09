@@ -1,0 +1,18 @@
+apiVersion: v1
+
+kind: Pod
+
+metadata: 
+  name: testapp-pod
+  labels:
+    app: testapp
+    env: homolog
+    location: UK
+
+spec: 
+  containers:
+    - name: nginx-container
+      image: nginx
+
+    - name: backend-container
+      image: redis
